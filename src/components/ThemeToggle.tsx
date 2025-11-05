@@ -1,10 +1,8 @@
-export default function ThemeToggle({
-  theme,
-  onToggle,
-}: {
+interface ThemeToggleProps {
   theme: "light" | "dark";
   onToggle: () => void;
-}) {
+}
+export default function ThemeToggle({ theme, onToggle }: ThemeToggleProps) {
   return (
     <button
       onClick={onToggle}

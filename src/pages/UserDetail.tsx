@@ -45,7 +45,11 @@ export default function UserDetails() {
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
             <h4 className="font-medium">Company</h4>
-            <div className="text-sm">{user.company ?? "—"}</div>
+            <div className="text-sm">
+              {typeof user.company === "string"
+                ? user.company
+                : user.company?.name ?? "—"}
+            </div>
           </div>
         </div>
       </div>

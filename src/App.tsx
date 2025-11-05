@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import UserDetails from "./pages/UserDetail.tsx";
+import UserList from "./pages/UserList.tsx";
 import ThemeToggle from "./components/ThemeToggle.tsx";
 import { loadJSON, saveJSON } from "./utils/storage";
 
@@ -30,7 +31,7 @@ export default function App() {
 
       <main className="max-w-5xl mx-auto p-4">
         <Routes>
-          <Route path="/" element={null} />
+          <Route path="/" element={<UserList />} />
           <Route path="/user/:id" element={<UserDetails />} />
         </Routes>
       </main>

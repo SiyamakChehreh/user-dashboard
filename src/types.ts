@@ -2,7 +2,7 @@ export interface User {
   id: number;
   name: string;
   email: string;
-  company?: string;
+  company?: string | Company;
   local?: boolean;
 }
 
