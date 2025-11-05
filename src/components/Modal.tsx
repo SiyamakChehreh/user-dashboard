@@ -16,10 +16,14 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, title }) => {
       onClick={onClose}
     >
       <div
-        className="bg-white dark:bg-gray-800 rounded shadow-lg p-6 w-full max-w-md"
+        className="bg-white dark:bg-gray-800 rounded-lg border-4 border-cyan-700 shadow-lg p-6 w-full max-w-md"
         onClick={(e) => e.stopPropagation()}
       >
-        {title && <h2 className="text-lg font-bold mb-4">{title}</h2>}
+        {title && (
+          <h2 className="text-2xl font-nunito font-bold mb-4 mx-auto">
+            {title}
+          </h2>
+        )}
         <div>{children}</div>
       </div>
     </div>

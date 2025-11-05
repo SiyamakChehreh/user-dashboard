@@ -5,6 +5,7 @@ import { loadJSON, saveJSON } from "../utils/storage";
 import type { User } from "../types";
 import { motion } from "framer-motion";
 import Modal from "../components/Modal";
+import Button from "./Buttons";
 
 const schema = z.object({
   name: z.string().min(2, "Name required"),
@@ -84,20 +85,13 @@ export default function AddUserModal({
             />
           </div>
 
-          <div className="flex justify-end gap-2">
-            <button
-              type="button"
-              onClick={onClose}
-              className="px-3 py-1 rounded border"
-            >
-              Cancel
-            </button>
-            <button
-              type="submit"
-              className="px-4 py-1 rounded bg-blue-600 text-white"
-            >
+          <div className="flex justify-center gap-2">
+            <Button type="button" onClick={onClose} variant="danger">
+              Close
+            </Button>
+            <Button type="submit" variant="primary">
               Add
-            </button>
+            </Button>
           </div>
         </form>
       </motion.div>

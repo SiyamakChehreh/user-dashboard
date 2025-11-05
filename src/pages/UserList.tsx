@@ -72,12 +72,9 @@ export default function UserList() {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
         <div className="flex gap-4 items-center">
           <Buttun onClick={() => setShowModal(true)}>Add User</Buttun>
-          <button
-            onClick={() => setShowSearch((prev) => !prev)}
-            className="px-1 py-1 md:px-2 rounded-xl border-2 border-gray-600 dark:border-cyan-800 bg-gradient-to-r from-cyan-500 to-blue-700 hover:scale-105 transition-transform duration-300 text-white font-oswald"
-          >
+          <Buttun onClick={() => setShowSearch((prev) => !prev)}>
             {showSearch ? "Close Search" : "Search Users"}
-          </button>
+          </Buttun>
           <AnimatePresence>
             {showSearch && (
               <motion.div
