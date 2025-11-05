@@ -2,6 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { fetchUsersById } from "../api/users";
 import { loadJSON } from "../utils/storage";
+import Button from "../components/Buttons";
 import type { User } from "../types";
 
 export default function UserDetails() {
@@ -35,9 +36,9 @@ export default function UserDetails() {
 
   return (
     <div className="space-y-4">
-      <button onClick={() => navigate(-1)} className="px-3 py-1 border rounded">
+      <Button onClick={() => navigate(-1)} variant="secondary">
         ← Back
-      </button>
+      </Button>
       <div className="p-4 bg-white dark:bg-gray-800 rounded shadow">
         <h2 className="text-2xl font-semibold">{user.name}</h2>
         <div className="text-sm text-gray-400">{user.email}</div>

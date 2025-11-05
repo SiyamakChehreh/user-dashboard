@@ -4,13 +4,12 @@ import { Link } from "react-router-dom";
 import Modal from "./Modal";
 import Button from "./Buttons";
 
-export default function UserCard({
-  user,
-  onDelete,
-}: {
+interface UserCardProps {
   user: User;
   onDelete: (id: number) => void;
-}) {
+}
+
+export default function UserCard({ user, onDelete }: UserCardProps) {
   const [confirmOpen, setConfirmOpen] = useState(false);
 
   const handleDelete = () => {

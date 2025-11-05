@@ -23,15 +23,11 @@ export default function UserList() {
   const [delayedLoading, setDelayedLoading] = useState(isLoading);
 
   useEffect(() => {
-    console.log("isLoadding changed to:", isLoading);
-
     if (isLoading) {
       setDelayedLoading(true);
     } else {
-      const delay = import.meta.env.DEV ? 2000 : 0;
+      const delay = import.meta.env.DEV ? 1000 : 0;
       const timer = setTimeout(() => {
-        console.log("stopping delayed working...");
-
         setDelayedLoading(false);
       }, delay);
 
