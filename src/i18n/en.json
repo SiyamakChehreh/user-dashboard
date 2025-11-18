@@ -1,0 +1,61 @@
+{
+  "welcome": "Good {{timeOfDay}}, {{name}}",
+  "timeOfDay": {
+    "morning": "morning",
+    "afternoon": "afternoon",
+    "evening": "evening"
+  },
+  "close": "Close",
+  "profileMessage": "Go and change your \"name\" from Profile section; the app will use this name for a welcoming message.",
+  "dashboard": {
+    "title": "dashboard",
+    "setProfileNameTitle": "Welcome!",
+    "setProfileNameMessage": "Please change your username in the Profile section from the sidebar so we can greet you properly.",
+    "gotIt": "Got it",
+    "currentTime": "Current time:",
+    "user": "User",
+    "quickLinks": {
+      "profile": "Go to Your Profile",
+      "profileDesc": "Go to Profile to update your name and preferences.",
+      "todos": "See your Todos",
+      "todosDesc": "Manage your tasks and notes efficiently."
+    }
+  },
+  "todos": {
+    "title": "todos",
+    "inputTitle": "Todo title",
+    "add": "Add",
+    "save": "Save",
+    "maybeLater": "Maybe Later",
+    "cancel": "Cancel",
+    "update": "Update",
+    "note": "Note (optional)",
+    "noNote": "No note",
+    "confirmDelete": "Are you sure you want to delete this todo?",
+    "delete": "Delete"
+  },
+  "weather": {
+    "title": "weather",
+    "searchTitle": "Search a city",
+    "enterCity": "Enter city name",
+    "search": "Search",
+    "lastSearch": "Last Search",
+    "weatherFor": "Weather for {{city}}",
+    "temperature": "Temperature",
+    "windSpeed": "Wind speed",
+    "notFound": "City not found"
+  },
+  "profile": {
+    "title": "Profile",
+    "name": "Name",
+    "namePlaceholder": "name",
+    "theme": "Theme",
+    "language": "Language",
+    "light": "Light",
+    "dark": "Dark",
+    "english": "English",
+    "farsi": "Farsi",
+    "saveChanges": "Save changes",
+    "pendingChangesNotice": "This is the preview of selected options. for applying changes, please confirm through the 'save changes' button "
+  }
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-display: swap;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url('@/assets/fonts/oswald-v57-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: url('@/assets/fonts/oswald-v57-latin-700.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Lalezar';
+  font-style: normal;
+  font-weight: 400;
+  src: url('@/assets/fonts/lalezar-v16-latin-regular.woff2') format('woff2');
+}
+
+
+@layer base {
+  html[lang="en"] {
+    font-family: 'Oswald', sans-serif;
+  }
+
+  html[lang="fa"] {
+    font-family: 'Lalezar', sans-serif;
+  }
+}
+
+
+:root {
+  --btn-primary: #174ca1;
+  --btn-primary-hover: #2563eb;
+
+  --btn-secondary: #6b7280;
+  --btn-secondary-hover: #4b5563;
+
+  --btn-danger: #ef4444;
+  --btn-danger-hover: #dc2626;
+
+  --btn-text: #ffffff;
+}
+
+.dark {
+  --btn-primary: #60a5fa;
+  --btn-primary-hover: #3b82f6;
+
+  --btn-secondary: #9ca3af;
+  --btn-secondary-hover: #6b7280;
+
+  --btn-danger: #f87171;
+  --btn-danger-hover: #ef4444;
+
+  --btn-text: #ffffff;
+}
